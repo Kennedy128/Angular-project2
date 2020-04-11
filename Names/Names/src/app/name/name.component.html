@@ -1,0 +1,10 @@
+<div>
+    <h1>My Names</h1>
+    <hr>
+    <ul>
+      <li *ngFor='let name of names'>
+        {{name.name}}
+        <app-name-detail [name]='name'></app-name-detail>
+      </li>
+    </ul>
+  </div>
